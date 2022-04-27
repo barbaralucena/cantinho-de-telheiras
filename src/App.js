@@ -6,8 +6,8 @@ import Homepage from './components/Homepage';
 import ORestaurante from './components/ORestaurante';
 import Menu from './components/Menu';
 import Contactos from './components/Contactos';
-import ReservasOnline from './components/ReservasOnline';
-import Footer from './components/Footer'
+import Reservas from './components/Reservas';
+import Footer from './components/Footer';
 
 export default function App(){
   return(
@@ -17,10 +17,10 @@ export default function App(){
         <Navbar />
         <Routes>
             <Route index path="/" element={<Homepage/>}/>
-            <Route path="/oRestaurante" element={<ORestaurante/>}/>
+            <Route path="/ORestaurante" element={<ORestaurante/>}/>
             <Route path="/Menu" element={<Menu/>}/>
             <Route path="/Contactos" element={<Contactos/>}/>
-            <Route path="/reservasOnline" element={<ReservasOnline/>}/>
+            <Route path="/Reservas" element={<Reservas/>}/>
         </Routes>
         <Footer/>
       </div>
