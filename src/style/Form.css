@@ -1,0 +1,15 @@
+form{
+    color: #fff;
+    text-align: center;
+    background-color: #82ac85;
+    border: white;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 50vh;
+}
+
+label{
+    display: grid;
+    place-content: center;
+}

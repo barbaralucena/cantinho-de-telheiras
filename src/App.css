@@ -9,89 +9,11 @@ body{
 	margin: 0;
 }
 
-.header-info{
-    background-color: #fff;
-    color: #82ac85;
-    text-align: center;
-}
-
-.header-info p{
-    display: inline-block;
-    margin: 0 20px 0 20px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #82ac85;
-    color: #fff;
-}
-
-.logo a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: 900;
-    font-style: italic;
-}
-
-.logo a:hover, .logo a:focus {
-    color: #cad9cb
-    ;
-}
-
-.navbar ul{
-    list-style: none;
-    padding: 0;
-    display: flex;
-    color: #fff;
-}
-
-.navbar li{
-    margin-left: 2em;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #fff
-}
-
-.navbar a:hover, .navbar a:focus {
-    color: #cad9cb;
-}
-
-h1{
-    margin: 0;
-}
-
-/* FORMULÁRIO */
-
-form{
-    color: #fff;
-    text-align: center;
-    background-color: #82ac85;
-    border: white;
-    display: grid;
-    place-items: center;
-    margin: 0;
-    height: 50vh;
-}
-
-label{
-    display: grid;
-    place-content: center;
-}
 
 
-/* Imagens Homepage*/
-.homepage-gallery{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
 
-.homepage-gallery img{
-    width: 50%;
-    margin: 0;
-}
+
+
+
+
+ 

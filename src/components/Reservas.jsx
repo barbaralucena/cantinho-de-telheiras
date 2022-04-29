@@ -1,4 +1,4 @@
-
+import "../style/Form.css";
 export default function ReservasOnline() {
     return(
         <main>

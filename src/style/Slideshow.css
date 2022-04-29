@@ -1,0 +1,38 @@
+
+.slideshow{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    z-index: 0;
+    overflow: hidden;
+    
+}
+.slideshow img{
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.slideshow_container{ 
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.slideshow button{
+    display: flex;
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 6em;
+    color: #fff;
+    bottom: 25vh;
+    padding: 0 42vw 0 42vw;
+}
