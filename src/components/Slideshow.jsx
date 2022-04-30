@@ -17,7 +17,7 @@ export default function Slideshow (){
     function nextImage(){
         setPosition(prevState=> prevState===slides.length-1? 0: prevState+1);    
     }
-
+   
     return(
         <div className="slideshow">
             <img src={slides[position]} alt="" />

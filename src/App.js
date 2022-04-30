@@ -1,6 +1,6 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HeaderInfo from './components/HeaderInfo';
+import { BrowserRouter, Switch, Route, Routes } from 'react-router-dom';
+import HeaderInfo from "./components/HeaderInfo"
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import ORestaurante from './components/ORestaurante';
@@ -14,7 +14,7 @@ export default function App(){
     <BrowserRouter>
       <div className="App">
         <HeaderInfo/>
-        <Navbar />
+        <Navbar/>
         <Routes>
             <Route index path="/" element={<Homepage/>}/>
             <Route path="/ORestaurante" element={<ORestaurante/>}/>

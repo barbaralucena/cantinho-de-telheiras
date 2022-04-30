@@ -31,7 +31,7 @@ export default function ReservasOnline() {
                     </label>
                 </div>
                 <div>
-                    <button type="submit">Guardar</button>
+                    <button type="submit">Reservar mesa</button>
                 </div>
             </form>
         </main>

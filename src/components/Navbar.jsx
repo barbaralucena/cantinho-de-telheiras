@@ -4,8 +4,8 @@ export default function Navbar() {
     return (
         <header>
             <div className="logo">
-                <h1 className="titles"><NavLink to="/">O Cantinho de Telheiras</NavLink></h1>
-                <p className="subtitle"><NavLink to="/">Comida Tradicional Portuguesa</NavLink>
+                <h1><NavLink to="/">O Cantinho de Telheiras</NavLink></h1>
+                <p><NavLink to="/">Comida Tradicional Portuguesa</NavLink>
                 </p>
             </div>
             <nav className="navbar">
