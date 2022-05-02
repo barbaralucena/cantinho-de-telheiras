@@ -11,4 +11,26 @@ form{
 label{
     display: grid;
     place-content: center;
+    margin: 1em auto;
 }
+
+textarea{
+    width: 20vw;
+    height: 8vh;
+}
+
+/* Esconder as setas que aparecem automáticamente no formulário de tipo numérico */
+label .no-arrow {
+    width: 12vw;
+    -moz-appearance: textfield;
+  }
+  
+label .no-arrow::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+label .no-arrow::-webkit-outer-spin-button, .no-arrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
