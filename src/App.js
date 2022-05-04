@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HeaderInfo from "./components/HeaderInfo"
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import ORestaurante from './components/ORestaurante';
@@ -13,7 +12,7 @@ export default function App(){
   return(
     <BrowserRouter>
       <div className="App">
-        <HeaderInfo/>
+        
         <Navbar/>
         <Routes>
             <Route index path="/" element={<Homepage/>}/>

@@ -1,0 +1,21 @@
+.página-contactos{
+    display: flex;
+    justify-content: space-around;
+    margin: 8vh 2vw;
+    line-height: 1.5em;
+}
+
+.página-contactos a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover, a:focus {
+    color: #cad9cb;
+}
+
+.página-contactos h1{
+   font-size: 1.5em;
+   margin-bottom: .5em;
+}
+

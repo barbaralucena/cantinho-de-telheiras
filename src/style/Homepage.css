@@ -1,0 +1,16 @@
+.header-info {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #043927;
+    text-align: center;
+}
+    
+.header-info a{
+    text-decoration: none;
+    color: #043927; 
+    font-size: .85em;
+    margin: .4em 1em .3em 1em;
+}
+    

@@ -1,6 +1,7 @@
 export default function Menu(){
+
     return(
-        <main>
+        <main className="menu">
             <p>
                 Entradas:
             </p>

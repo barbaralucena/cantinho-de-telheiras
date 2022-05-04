@@ -20,7 +20,7 @@ export default function ReservasOnline() {
     }
    
     return(
-        <main>
+        <main className="formulário">
             {formSubmitted && <p role="alert"> {`Agradecemos a sua reserva ${formData.name}. Em breve receberá mensagem com a confirmação.`}</p>} {!formSubmitted && <form onSubmit={handleSubmit}>
                     <label>
                     O seu nome:
