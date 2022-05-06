@@ -7,8 +7,8 @@ export default function Homepage(){
                <div className="header-info">
                    <HeaderInfo/>
                </div>
-               <main>
-            <Slideshow/>
+            <main>
+             <Slideshow/>
             </main>
             </div>
     )

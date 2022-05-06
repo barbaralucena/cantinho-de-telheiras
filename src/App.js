@@ -8,11 +8,11 @@ import Contactos from './components/Contactos';
 import Reservas from './components/Reservas';
 import Footer from './components/Footer';
 
+
 export default function App(){
   return(
     <BrowserRouter>
       <div className="App">
-        
         <Navbar/>
         <Routes>
             <Route index path="/" element={<Homepage/>}/>

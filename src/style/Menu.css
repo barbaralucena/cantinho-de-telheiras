@@ -1,4 +1,4 @@
-.página-contactos header{
+.menu header{
     background-color: #043927;
     position: relative; 
     height: 30vh;
@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.página-contactos header::before{    
+.menu header::before{    
     content:"";
     background-image: url("/public/images/o-restaurante/img1.jpeg");
     background-size:cover;
@@ -21,7 +21,7 @@
     opacity: 0.5;
 }
 
-.página-contactos header h1{
+.menu header h1{
     position: relative;
     color: #fff;  
     font-size: 5em;
@@ -29,35 +29,26 @@
     text-align: center;
 }
 
-.página-contactos main{
+.menu main{
     display: flex;
     text-align: center;
     line-height: 1.5em;
+    margin: 0 5vw; 
     font-weight: 500;
     font-style: normal;
     font-size: 1.1em;
-    margin: 0 5vw;
 }
 
-.página-contactos main h2{
+.menu main h2{
     text-align: center;
     text-transform: uppercase;
-    margin: 1em 0;
+    margin: 1.5em 0 .7em;
     font-weight: 600;
     font-size: 1.5em;
 }
 
-.página-contactos main a{
-    color: #fff;
-}
-
-.página-contactos main a:hover, 
-.página-contactos main a:focus {
-    color: #cad9cb;
-}
-
-.página-contactos main div{
-    margin: 0 2em;
+.menu li{
+    list-style: circle;
 }
 
 

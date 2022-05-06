@@ -1,7 +1,6 @@
 import "../style/ORestaurante.css";
 export default function ORestaurante(){
     return(
-       
         <div className= "o-restaurante">
             <header>
                 <h1> O Restaurante </h1>

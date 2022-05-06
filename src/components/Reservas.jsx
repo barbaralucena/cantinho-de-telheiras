@@ -1,4 +1,4 @@
-import "../style/Form.css";
+import "../style/Reservas.css";
 import { useState } from "react";
 
 export default function ReservasOnline() {
@@ -9,7 +9,7 @@ export default function ReservasOnline() {
         const {name,value,type,checked} = event.target;
         setFormData(prevState => ({
           ...prevState,
-          [name]: type === "checkbox" ? checked : value
+          [name]: value
         }));
     }
 
@@ -20,8 +20,9 @@ export default function ReservasOnline() {
     }
    
     return(
-        <main className="formulário">
+        <div className="form-page">
             {formSubmitted && <p role="alert"> {`Agradecemos a sua reserva ${formData.name}. Em breve receberá mensagem com a confirmação.`}</p>} {!formSubmitted && <form onSubmit={handleSubmit}>
+                <div className="form">
                     <label>
                     O seu nome:
                         <input 
@@ -100,8 +101,10 @@ export default function ReservasOnline() {
                             />
                     </label>
                     <button type="submit" >Reservar mesa</button>
+                </div>
             </form>}
-        </main>
+       
+    </div>
     )
 }
 
