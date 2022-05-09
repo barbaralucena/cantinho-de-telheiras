@@ -16,6 +16,8 @@
     overflow: hidden;
 }
 
+
+
 .slideshow_container{ 
     display: flex;
     justify-content: space-around;
@@ -33,5 +35,6 @@
     font-size: 6em;
     color: #fff;
     bottom: 25vh;
-    padding: 0 42vw 0 42vw;
+    padding: 0 42vw;
+    opacity: .8;
 }

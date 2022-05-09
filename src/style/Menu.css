@@ -10,8 +10,9 @@
 
 .menu header::before{    
     content:"";
-    background-image: url("/public/images/o-restaurante/img1.jpeg");
-    background-size:cover;
+    background-image: url("/public/images/menu/img1.jpg");
+    background-size: 100%;
+    background-position: center;
     position: absolute;
     display: inline;
     top: 0px;

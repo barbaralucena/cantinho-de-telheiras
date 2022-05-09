@@ -6,6 +6,8 @@ header {
     color: #fff;
 }
 
+/* NAV */
+
 .navbar ul{
     display: flex;
     list-style: none;
@@ -31,43 +33,52 @@ header {
     border-bottom: .1em solid #cad9cb;
 }
 
-.logo a{
-    color: #fff;
-    text-align: center;
-    width: 100%;  
-    font-weight: 400; 
-    text-decoration: none;
-    margin-left: 1vw;    
-    font-family: 'Sail', cursive;
-    font-style: normal;
-    font-size: 1em;
+/* LOGO */
+
+
+.logo img{
+    width: 20vw;
+    margin: 4vh 25vw 2vh 1vw ;
 }
 
-.logo h1 a{
-    font-size: 2.75em;
-    margin-bottom: 0;
+
+/* HAMBURGUER */
+
+.hamburguer button{
+    background: none;
+    border: none;
+    width: 10vw; 
+    cursor: pointer;
 }
 
-.logo h1{
-    margin: 1.5em 0 1em ;
+.hamburguer img{
+    max-width: 100%;
+} 
+
+.hamburguer{
+        display: flex;   
+        margin:  0;
+    }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1082px){
+        .navbar ul{
+            display: none;
+        }
+        .header-info{
+            display: none;
+        }
+        .hamburguer button{
+            width: 5vw;
+        }
+    }
+@media screen and (min-width:1082px){
+   .hamburguer{
+    display: none;
+    }
+       
 }
 
-.logo p a{
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-style: normal;
-    font-weight: 500;
-}
 
-.logo p{
-    text-align: center;
-    margin: 0 0 3vh;
-}
-
-.logo a:hover, .logo a:focus {
-    color: #cad9cb;
-}
-
-  
         

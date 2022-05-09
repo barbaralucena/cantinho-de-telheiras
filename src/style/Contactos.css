@@ -10,8 +10,9 @@
 
 .página-contactos header::before{    
     content:"";
-    background-image: url("/public/images/o-restaurante/img1.jpeg");
+    background-image: url("/public/images/contactos/img1.jpeg");
     background-size:cover;
+    background-position-y: 58%;
     position: absolute;
     display: inline;
     top: 0px;

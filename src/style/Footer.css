@@ -1,0 +1,13 @@
+
+.social-media{ 
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.social-media img{
+    width: 30px;
+    margin-right: 10px;
+}

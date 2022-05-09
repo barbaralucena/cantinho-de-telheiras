@@ -7,7 +7,9 @@ export default function Slideshow (){
         "/images/slideshow/img2.jpeg",
         "/images/slideshow/img3.jpeg",
         "/images/slideshow/img4.jpeg",
+        "/images/slideshow/img5.jpeg",
     ]
+    
     const [position,setPosition]=useState(0);
 
     function prevImage(){

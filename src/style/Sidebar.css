@@ -1,0 +1,53 @@
+.sidebar ul, .sidebar .close{
+    display: none;
+}
+
+@media screen and (max-width:1095px){
+    .sidebar ul{ 
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: 0.5s ease;    
+        width: 50vw;
+        height: 100vh;
+        background-color: #043927;
+        flex-direction: column;
+        z-index: 5;
+    }
+    .sidebar ul a{
+        color: #fff; 
+        display: flex;
+        font-weight: 500;  
+        font-style: normal;    
+        text-transform: uppercase;  
+        flex-direction: column;
+        text-align: center;
+        margin: 1em;
+    }
+
+    .sidebar ul a:hover {
+        color: #cad9cb;  
+    }
+
+    .first-li{
+        margin-top: 40vh;
+    }
+    
+    .sidebar .close{
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        height: 100vh; 
+        flex-direction: column;
+        z-index: 5;
+    }
+    .sidebar .close img{
+        width: 27px;
+        
+    }     
+}

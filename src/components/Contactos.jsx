@@ -24,7 +24,7 @@ export default function Contactos(){
                 <div className="horários">
                     <h2>Horários</h2>
                     <p>De segunda-feira a sexta-feira, das 8 às 22h</p>
-                    <p>E sábados das 8h às 16h</p>
+                    <p>Sábados das 8h às 16h</p>
                 </div>
             </main>
         </div>
