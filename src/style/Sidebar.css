@@ -1,9 +1,9 @@
-.sidebar ul, .sidebar .close{
+.sidebar, .close-sidebar{
     display: none;
 }
 
 @media screen and (max-width:1095px){
-    .sidebar ul{ 
+    .sidebar{ 
         display: flex;
         position: fixed;
         top: 0;
@@ -12,9 +12,10 @@
         width: 50vw;
         height: 100vh;
         background-color: #043927;
-        flex-direction: column;
         z-index: 5;
+        flex-direction: column;
     }
+
     .sidebar ul a{
         color: #fff; 
         display: flex;
@@ -33,21 +34,25 @@
     .first-li{
         margin-top: 40vh;
     }
-    
-    .sidebar .close{
+
+    .close-sidebar{
         display: flex;
         position: absolute;
         top: 0;
         right: 0;
-        background: none;
-        border: none;
-        cursor: pointer;
         height: 100vh; 
         flex-direction: column;
         z-index: 5;
     }
-    .sidebar .close img{
-        width: 27px;
-        
+
+    .close-sidebar button{
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .close-sidebar img{
+        margin: 1em;
+        width: 25px; 
     }     
 }

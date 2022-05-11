@@ -56,8 +56,9 @@ header {
 } 
 
 .hamburguer{
-        display: flex;   
-        margin:  0;
+    position: fixed;    
+    top:10px;
+    right:10px;
     }
 
 /* MEDIA QUERIES */
@@ -69,6 +70,11 @@ header {
         .header-info{
             display: none;
         }
+        .logo img{
+            width: 30vw;
+
+            margin: 2vh 2vw ;
+        }
         .hamburguer button{
             width: 5vw;
         }
@@ -77,7 +83,13 @@ header {
    .hamburguer{
     display: none;
     }
-       
+}
+
+@media screen and (max-width:700px){
+    .hamburguer button{
+        width:8vw;
+    }
+
 }
 
 
