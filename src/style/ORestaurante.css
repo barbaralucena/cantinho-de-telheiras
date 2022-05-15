@@ -1,11 +1,14 @@
 .o-restaurante header{
-    background-color: #043927;
-    position: relative; 
+    background-color: #fff;
+    position: relative;
+    margin-top: 13vh; 
     height: 30vh;
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
 
 .o-restaurante header::before{    
@@ -18,7 +21,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .o-restaurante header h1{
@@ -30,6 +33,7 @@
 }
 
 .o-restaurante p {
+    z-index: 100;
     text-align: justify;
     line-height: 1.5em;
     margin: 0 5vw; 
@@ -39,6 +43,7 @@
 }
 
 .o-restaurante h2 {
+    z-index: 100;
     text-align: center;
     margin: 1.5em auto;
     font-weight: 600;

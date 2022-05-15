@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar"
 export default function Navbar() {
     const [toggleSidebar, setToggleSidebar] = useState(false);  
     return (
-        <header>
+        <header className="site-header">
             <div className="logo">
                 <NavLink to="/"><img src="/images/ícones/B4.svg" alt="ir para a homepage"/></NavLink>
             </div>  

@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import "../style/Slideshow.css";
 
 export default function Slideshow (){
@@ -12,19 +12,26 @@ export default function Slideshow (){
     
     const [position,setPosition]=useState(0);
 
-    function prevImage(){
+    function prevImage(event){
         setPosition(prevState=> prevState===0? slides.length-1: prevState-1);
+        event.preventDefault(event);
     }
-    function nextImage(){
-        setPosition(prevState=> prevState===slides.length-1? 0: prevState+1);    
+
+    function nextImage(event){
+        setPosition(prevState=> prevState===slides.length-1? 0: prevState+1);
+        event.preventDefault(event); 
     }
+
+    useEffect(() => {
+        setInterval(nextImage, 3000);
+    });
    
     return(
         <div className="slideshow">
             <img src={slides[position]} alt="" />
             <div className="slideshow_container">
-                <button type="button" onClick={prevImage}>&lt;</button>
-                <button type="button" onClick={nextImage}>&gt;</button>
+                <button type="button" className="previous" onClick={prevImage}>&#8249;</button>
+                <button type="button" className="next" onClick={nextImage}>&#8250;</button>
             </div>
         </div>
     )

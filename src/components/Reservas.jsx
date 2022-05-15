@@ -6,7 +6,7 @@ export default function ReservasOnline() {
     const [formData, setFormData] = useState({name:"", date:"", time:"", peopleQuantity:"", phoneNumber:"", informations:""})
 
     function handleChange(event){
-        const {name,value,type,checked} = event.target;
+        const {name,value} = event.target;
         setFormData(prevState => ({
           ...prevState,
           [name]: value

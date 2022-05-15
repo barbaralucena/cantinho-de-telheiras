@@ -1,4 +1,4 @@
-import "../style/Header.css";
+import "../style/Homepage.css";
 
 export default function HeaderInfo(){
     return(

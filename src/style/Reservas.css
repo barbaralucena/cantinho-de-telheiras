@@ -2,14 +2,13 @@
 .form-page{
     display: flex;
     height: 100%;
+    width: 100%;
     justify-content: center;
     margin: 0;
 }
 
 .form{
-    background-color: #fff ;
-    color: #043927;
-    border: double .5em #043927;
+    margin-top: 18vh; 
     padding: 0 1em 1em;
     font-size: 1.2em;
     text-align: center;
@@ -26,15 +25,16 @@ small{
 }
 
 textarea{
-    width: 20vw;
+    width: 100%;
     height: 8vh;
 }
 
 
 
+
 /* Esconder as setas que aparecem automáticamente no formulário de tipo numérico */
 label .no-arrow {
-    width: 12vw;
+    
     -moz-appearance: textfield;
 }
   

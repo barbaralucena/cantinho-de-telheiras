@@ -1,12 +1,25 @@
 import "../style/Menu.css"
+
 export default function Menu(){
     return(
         <div className="menu">
+        
             <header>
-                <h1>O nosso menu</h1>
+                <h1>O nosso menu</h1> 
+                <p>(A oferta de pratos varia diariamente)</p>
             </header>
+            <nav>
+                <ul className="nav-list">
+                    <li onClick="/">Pratos de Carne</li>
+                    <li onClick="/">Pratos de Peixe</li>
+                    <li onClick="/">Petiscos</li>
+                    <li onClick="/">Sobremesas</li>
+                    <li onClick="">Garrafeira</li>
+                </ul>
+            </nav>
             <main>
-            <div>
+            
+            <div>                
                 <h2>Pratos de Peixe</h2>
                 <ul>
                     <li>Dourada ou robalinho Grelhado</li>
@@ -29,7 +42,7 @@ export default function Menu(){
                 </ul>
             </div>
             <div>
-                <h2>Ovos</h2>
+                <h2>Petiscos</h2>
                 <ul>
                     <li>Omelete de Gambas c/Arroz e Batata Frita</li>
                     <li>Omelete de queijo/fiambre c/Arriz e Batata Frita</li>
@@ -48,6 +61,7 @@ export default function Menu(){
                         <li>Fidalgo Alentejano</li>
                     </ul>
             </div>
+
         </main>
         </div>
     );

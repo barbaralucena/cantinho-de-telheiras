@@ -1,8 +1,8 @@
 .sidebar, .close-sidebar{
-    display: none;
+    display: none; 
 }
 
-@media screen and (max-width:1095px){
+@media screen and (max-width:750px){
     .sidebar{ 
         display: flex;
         position: fixed;
@@ -11,12 +11,13 @@
         transition: 0.5s ease;    
         width: 50vw;
         height: 100vh;
-        background-color: #043927;
-        z-index: 5;
+        background-color: rgba(4, 57, 39, 0.99);
         flex-direction: column;
+        z-index: 2;
     }
 
     .sidebar ul a{
+        z-index: 5;
         color: #fff; 
         display: flex;
         font-weight: 500;  
@@ -42,7 +43,7 @@
         right: 0;
         height: 100vh; 
         flex-direction: column;
-        z-index: 5;
+        z-index: 6;
     }
 
     .close-sidebar button{
@@ -55,4 +56,11 @@
         margin: 1em;
         width: 25px; 
     }     
+
+    
+
+    
+
 }
+    
+
