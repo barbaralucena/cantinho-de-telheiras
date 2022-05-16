@@ -12,7 +12,7 @@
 
 }
 
-.nav-list {
+.menu nav ul{
     color: #043927;
     font-size: 1.2em;
     text-align: center;
@@ -22,7 +22,7 @@
 }
 
 
-.nav-list li{
+.menu li{
     margin: 1vh 4vw;
     text-transform: uppercase;
     font-style: normal;
@@ -67,6 +67,14 @@
     font-weight: 500;
     font-style: normal;
     font-size: 1.1em;
+}
+
+.pratosdepeixe{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    font-size: 5em;
 }
 
 .menu main h2{

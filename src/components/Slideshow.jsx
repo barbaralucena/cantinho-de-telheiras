@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import "../style/Slideshow.css";
 
 export default function Slideshow (){
-    const slides= [
+    const slides = [
         "/images/slideshow/img1.jpeg",
         "/images/slideshow/img2.jpeg",
         "/images/slideshow/img3.jpeg",
@@ -10,28 +10,42 @@ export default function Slideshow (){
         "/images/slideshow/img5.jpeg",
     ]
     
-    const [position,setPosition]=useState(0);
+    const [position, setPosition] = useState(0);
+    const slideLength = slides.length;
 
-    function prevImage(event){
-        setPosition(prevState=> prevState===0? slides.length-1: prevState-1);
-        event.preventDefault(event);
+    const autoSlide= true;
+    let slideInterval;
+    let intervalDuration = 2500;
+
+    function prevSlide(){
+        setPosition(prevState => prevState ===0? slideLength-1 : prevState-1); 
     }
 
-    function nextImage(event){
-        setPosition(prevState=> prevState===slides.length-1? 0: prevState+1);
-        event.preventDefault(event); 
+    function nextSlide(){
+        setPosition(prevState=> prevState===slideLength-1? 0: prevState+1); 
+    }
+
+    function autoPlay(){
+        slideInterval = setInterval(nextSlide,intervalDuration)
     }
 
     useEffect(() => {
-        setInterval(nextImage, 3000);
-    });
+         setPosition(0)
+    },[]);
+
+    useEffect(() => {
+        if (autoSlide) {
+            autoPlay();
+        }
+        return () => clearInterval(slideInterval)
+   }, []);
    
     return(
         <div className="slideshow">
             <img src={slides[position]} alt="" />
             <div className="slideshow_container">
-                <button type="button" className="previous" onClick={prevImage}>&#8249;</button>
-                <button type="button" className="next" onClick={nextImage}>&#8250;</button>
+                <button type="button" className="previous" onClick={prevSlide}>&#8249;</button>
+                <button type="button" className="next" onClick={nextSlide}>&#8250;</button>
             </div>
         </div>
     )
