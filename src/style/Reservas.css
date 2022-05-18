@@ -6,24 +6,32 @@
     justify-content: center;
     margin: 0;
     background-color: var(--tertiary-color);
+ 
+
 }
 
 
 .form{
-    margin-top: 18vh; 
+    margin-top: 14vh; 
     padding: 0 1em 1em;
-    font-size: 1.2em;
     text-align: center;
-    font-weight: 500;
-    color: var(--primary-color);
     width: 30vw;
     height: 74vh;
+    text-transform: uppercase;
+    font-family: var(--secondary-font)
+    ;
+    font-size: 1.4em;
+    color: var(--primary-color);
+    text-align: center;
+    font-weight: 500;
 }
 
 .form button{
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     font-style: italic;
+    margin-bottom: 10vh;
+
 }
 
 label{

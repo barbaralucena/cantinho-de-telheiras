@@ -1,5 +1,5 @@
 
-.menu header{
+.garrafeira header{
     background-color: var(--secondary-color);
     position: relative; 
     margin-top: 13vh; 
@@ -12,11 +12,11 @@
 }
 
 
-.menu header::before{    
+.garrafeira header::before{    
     content:"";
-    background-image: url("/public/images/menu/img1.jpg");
+    background-image: url("/public/images/garrafeira/img1.jpeg");
     background-size: 100%;
-    background-position: center;
+    background-position-y: 90vh;
     position: absolute;
     display: inline;
     top: 0px;
@@ -26,29 +26,27 @@
     opacity: 0.8;
 }
 
-.menu header h1{ 
-       
+.garrafeira header h1{    
     text-transform: uppercase;
     font-weight: 500;
     font-family: var(--secondary-font);  
-    color: var(--secondary-color);  
+    color: var(--primary-color);
+    background-color: var(--secondary-color);  
     position: relative;
     font-size: 5em;
     line-height: 0.9;
     text-align: center;
-
 }
 
-.menu header p{
+.garrafeira header p{
     position: relative;
     color: #fff;  
     font-size: 1em;
     line-height: 0.9;
     text-align: center;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);  }
+}
 
-.menu main p{
+.garrafeira main p{
     text-align:justify;
     font-weight: 100;
     line-height: 1.5em;
@@ -58,7 +56,7 @@
 }
 
 
-.menu main h2{
+.garrafeira main h2{
     text-transform: uppercase;
     font-family: var(--secondary-font)
     ;
@@ -74,7 +72,7 @@
     justify-content: center;
 }
 
-.menu button{
+.garrafeira button{
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     border: 1px solid var(--primary-color);
@@ -84,20 +82,21 @@
     text-transform: uppercase;
 }  
     
-.menu button:hover {
+.garrafeira button:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transition: color .3s ease-in-out;
 }
 
 
-.menu li{
+.garrafeira li{
     color: var(--primary-color);
     padding: .5vh 2vw;
     font-weight: 400;
+
 }
 
-.menu ul{
+.garrafeira ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align:left;
@@ -110,14 +109,15 @@
 
 
 @media screen and (max-width:750px){
-    .menu main{
+    .garrafeira main{
         flex-direction: column;
         
     }
-    .menu li{
+    .garrafeira li{
         list-style-type: none;
     }
 }
+
 
 
 

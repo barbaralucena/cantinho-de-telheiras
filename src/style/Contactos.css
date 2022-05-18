@@ -3,11 +3,9 @@
     position: relative; 
     margin-top: 13vh; 
     height: 30vh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .página-contactos header::before{    
@@ -22,6 +20,7 @@
     bottom: 0px;
     left: 0px;
     opacity: 0.8;
+    width: 100%;
 }
 
 .página-contactos header h1{
@@ -44,7 +43,10 @@
     margin: 0 5vw; 
     font-size: 1em;
     color: var(--primary-color);
+    transition: transform .2s
 }
+
+
 
 .página-contactos main h2{
     text-transform: uppercase;
@@ -59,11 +61,11 @@
 
 .página-contactos main a{
     color: var(--primary-color);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.página-contactos main a:hover, 
-.página-contactos main a:focus {
-    color: var(--primary-color);
+.página-contactos main a:hover{
+    color: var(--secondary-color);  
 }
 
 .página-contactos main div{
@@ -78,5 +80,6 @@
     .página-contactos main{
         display: flex;
         flex-direction: column;
+        margin-bottom: 10vh;
     }
 }
