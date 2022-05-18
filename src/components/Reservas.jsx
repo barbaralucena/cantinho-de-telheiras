@@ -23,7 +23,7 @@ export default function ReservasOnline() {
         <div className="form-page">
             {formSubmitted && <p role="alert"> {`Agradecemos a sua reserva ${formData.name}. Em breve receberá mensagem com a confirmação.`}</p>} {!formSubmitted && <form onSubmit={handleSubmit}>
                 <div className="form">
-                    <label>
+                    <label className="first-label">
                     O seu nome:
                         <input 
                         type="text" 
@@ -95,7 +95,7 @@ export default function ReservasOnline() {
                             <textarea
                             name="informations"
                             aria-label="Informations"
-                            placeholder="Se tiver alguma informação adicional que nos queira transmitir, escreva aqui por favor."
+                            placeholder="Caso tenha mais alguma informação que nos queira transmitir, faço-o aqui por favor."
                             value={formData.informations}
                             onChange={handleChange}
                             />

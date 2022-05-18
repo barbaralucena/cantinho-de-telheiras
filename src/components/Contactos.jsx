@@ -14,17 +14,17 @@ export default function Contactos(){
                 <div className="contactos">
                     <h2>Contactos</h2>
                     <p>
-                        Telefone: <a href="tel:217587843"> 217587843</a>
+                        <bold>Telefone:</bold> <a href="tel:217587843"> 217587843</a>
                     </p>
                     <p>
-                        Email:  
+                        <bold>Email:</bold>
                         <a href="mailto:cantinhotelheiras@gmail.com">   cantinhotelheiras@gmail.com</a>
                     </p>
                 </div>
                 <div className="horários">
                     <h2>Horários</h2>
-                    <p>De segunda-feira a sexta-feira, das 8 às 22h</p>
-                    <p>Sábados das 8h às 16h</p>
+                    <p>De <bold>segunda-feira a sexta-feira</bold> das 8 às 22h.</p>
+                    <p><bold>Sábados</bold> das 8h às 16h.</p>
                 </div>
             </main>
         </div>

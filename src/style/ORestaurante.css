@@ -1,5 +1,5 @@
 .o-restaurante header{
-    background-color: #fff;
+    background-color: var(--secondary-color);
     position: relative;
     margin-top: 13vh; 
     height: 30vh;
@@ -8,7 +8,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    
+}
+
+.o-restaurante header h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--secondary-font);  
+    color: var(--secondary-color);  
+    position: relative;
+    font-size: 5em;
+    line-height: 0.9;
+    text-align: center;
 }
 
 .o-restaurante header::before{    
@@ -21,33 +31,29 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.8;
+    opacity: .8;
 }
 
-.o-restaurante header h1{
-    position: relative;
-    color: #fff;  
-    font-size: 5em;
-    line-height: 0.9;
-    text-align: center;
-}
 
-.o-restaurante p {
-    z-index: 100;
-    text-align: justify;
+.o-restaurante main p {
+    text-align:justify;
+    font-weight: 100;
     line-height: 1.5em;
     margin: 0 5vw; 
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.1em;
+    font-size: 1em;
+    color: var(--primary-color);
 }
 
-.o-restaurante h2 {
-    z-index: 100;
+.o-restaurante main h2 {
+    text-transform: uppercase;
+    font-family: var(--secondary-font)
+    ;
+    font-size: 1.4em;
+    color: var(--primary-color);
     text-align: center;
-    margin: 1.5em auto;
-    font-weight: 600;
-    font-size: 1.5em;
+    margin: 1.5em 0;
+    font-weight: 200;
 }
+
 
 

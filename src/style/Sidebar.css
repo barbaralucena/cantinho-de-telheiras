@@ -1,5 +1,5 @@
 .sidebar, .close-sidebar{
-    display: none; 
+    display: none;
 }
 
 @media screen and (max-width:750px){
@@ -11,14 +11,13 @@
         transition: 0.5s ease;    
         width: 50vw;
         height: 100vh;
-        background-color: rgba(4, 57, 39, 0.99);
+        background-color: var(--tertiary-color);
         flex-direction: column;
         z-index: 2;
     }
 
     .sidebar ul a{
-        z-index: 5;
-        color: #fff; 
+        color: var(--primary-color);
         display: flex;
         font-weight: 500;  
         font-style: normal;    
@@ -26,10 +25,14 @@
         flex-direction: column;
         text-align: center;
         margin: 1em;
+        z-index: 5;
+        box-shadow: inset 0 0 0 0 var(--primary-color);
+        transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
     }
 
     .sidebar ul a:hover {
-        color: #cad9cb;  
+        box-shadow: inset 200px 0 0 0 var(--primary-color);
+        color: var(--secondary-color);
     }
 
     .first-li{
@@ -55,11 +58,7 @@
     .close-sidebar img{
         margin: 1em;
         width: 25px; 
-    }     
-
-    
-
-    
+    }       
 
 }
     

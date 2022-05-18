@@ -1,5 +1,5 @@
 .página-contactos header{
-    background-color: #fff;
+    background-color: var(--secondary-color);
     position: relative; 
     margin-top: 13vh; 
     height: 30vh;
@@ -25,8 +25,11 @@
 }
 
 .página-contactos header h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--secondary-font);  
+    color: var(--secondary-color);  
     position: relative;
-    color: #fff;  
     font-size: 5em;
     line-height: 0.9;
     text-align: center;
@@ -34,29 +37,33 @@
 
 .página-contactos main{
     display: flex;
-    text-align: center;
+    flex-direction: row;
+    text-align:justify;
+    font-weight: 100;
     line-height: 1.5em;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.1em;
-    margin: 0 5vw;
+    margin: 0 5vw; 
+    font-size: 1em;
+    color: var(--primary-color);
 }
 
 .página-contactos main h2{
-    text-align: center;
     text-transform: uppercase;
-    margin: 1em 0;
-    font-weight: 600;
-    font-size: 1.5em;
+    font-family: var(--secondary-font)
+    ;
+    font-size: 1.4em;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 1.5em 0;
+    font-weight: 200;
 }
 
 .página-contactos main a{
-    color: #043927;
+    color: var(--primary-color);
 }
 
 .página-contactos main a:hover, 
 .página-contactos main a:focus {
-    color: #cad9cb;
+    color: var(--primary-color);
 }
 
 .página-contactos main div{

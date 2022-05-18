@@ -17,10 +17,13 @@ export default function App(){
         <Routes>
             <Route index path="/" element={<Homepage/>}/>
             <Route path="/ORestaurante" element={<ORestaurante/>}/>
-            <Route path="/Menu/*" element={<Menu/>}/>
+            <Route path="/Menu" element={<Menu/>} />   
+           
             <Route path="/Contactos" element={<Contactos/>}/>
             <Route path="/Reservas" element={<Reservas/>}/>
         </Routes>
+       
+        
         <Footer/>
       </div>
     </BrowserRouter>

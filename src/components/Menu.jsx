@@ -1,68 +1,49 @@
-import "../style/Menu.css"
-
+import "../style/Menu.css";
+import { useState, useEffect } from "react";
+import {PratosdeCarne, PratosdePeixe, Petiscos, Sobremesas, Garrafeira} from "./menu-data";
 export default function Menu(){
+    const [filter,setFilter] = useState('PRATOS-DE-CARNE')
+    const [products, setProducts] = useState(PratosdeCarne)
+    useEffect(()=>{
+        if(filter === 'PRATOS-DE-CARNE'){
+            setProducts(PratosdeCarne)
+        }
+        if(filter === 'PRATOS-DE-PEIXE'){
+            setProducts(PratosdePeixe)
+        }
+        if(filter === 'PETISCOS'){
+            setProducts(Petiscos)
+        }
+        if(filter === 'SOBREMESAS'){
+            setProducts(Sobremesas)
+        }
+        if(filter === 'GARRAFEIRA'){
+            setProducts(Garrafeira)
+        }
+    },[filter])
     return(
         <div className="menu">
-        
             <header>
                 <h1>O nosso menu</h1> 
                 <p>(A oferta de pratos varia diariamente)</p>
             </header>
-            <nav>
-                <ul className="nav-list">
-                    <li onClick="/">Pratos de Carne</li>
-                    <li onClick="/">Pratos de Peixe</li>
-                    <li onClick="/">Petiscos</li>
-                    <li onClick="/">Sobremesas</li>
-                    <li onClick="">Garrafeira</li>
-                </ul>
-            </nav>
-            <main>
-            
-            <div>                
-                <h2>Pratos de Peixe</h2>
+            <div className="menu-nav">
+                <div className="btn-container">
+                <button  onClick={()=> setFilter('PRATOS-DE-PEIXE')}>Pratos de Peixe</button>
+                <button  onClick={()=> setFilter('PRATOS-DE-CARNE')}>Pratos de Carne</button>
+                <button  onClick={()=> setFilter('PETISCOS')}>Petiscos</button>
+                <button  onClick={()=> setFilter('SOBREMESAS')}>Sobremesas</button>
+                <button  onClick={()=> setFilter('GARRAFEIRA')}>Garrafeira</button>
+                </div>
                 <ul>
-                    <li>Dourada ou robalinho Grelhado</li>
-                    <li>Caril de Gamas c/Arroz Basmati </li>
-                    <li>Salmão Grelhado</li>
-                    <li>Bitoque de Atum c/Ovo</li>
-                    <li>Gambas à Guilho c/Arroz Branco</li>
+                    {products.map((item=>(<li
+                    key={item.id}>{item.name}</li>
+                    )))} 
                 </ul>
             </div>
-            <div>
-                <h2>Pratos de Carne</h2>
-                <ul>
-                    <li>Costeleta de Novilho no Churrasco</li>
-                    <li>Alheira Frita c/Ovo</li>
-                    <li>Hambúrguer de Novilho c/Ovo</li>
-                    <li>Bifinhos de Peru Grelhados c/Molho de Limão</li>
-                    <li>Bifinho do Lombo Grelhado</li>
-                    <li>Iscas Fritas ao Alho</li>
-                    <li>Bitoque especial do Lombo</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Petiscos</h2>
-                <ul>
-                    <li>Omelete de Gambas c/Arroz e Batata Frita</li>
-                    <li>Omelete de queijo/fiambre c/Arriz e Batata Frita</li>
-                    <li>Omelete de Legumes</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Sobremesas</h2>
-                    <ul>
-                        <li>Arroz Doce</li>
-                        <li>Leite Creme Queimado</li>
-                        <li>Bolo de Bolacha</li>
-                        <li>Chiffon de Chocolate</li>
-                        <li>Faráfias c/Creme de Ovo</li>
-                        <li>Sericaia c/Ameixa</li>
-                        <li>Fidalgo Alentejano</li>
-                    </ul>
-            </div>
-
-        </main>
         </div>
-    );
+    )
+
 }
+
+        

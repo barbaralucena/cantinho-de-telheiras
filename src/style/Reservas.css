@@ -5,19 +5,35 @@
     width: 100%;
     justify-content: center;
     margin: 0;
+    background-color: var(--tertiary-color);
 }
+
 
 .form{
     margin-top: 18vh; 
     padding: 0 1em 1em;
     font-size: 1.2em;
     text-align: center;
+    font-weight: 500;
+    color: var(--primary-color);
+    width: 30vw;
+    height: 74vh;
+}
+
+.form button{
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-style: italic;
 }
 
 label{
     display: grid;
     place-content: center;
-    margin: 1em auto;
+    margin: 1em;
+}
+
+.first-label{
+   padding-top: 4vh;
 }
 
 small{
@@ -29,12 +45,8 @@ textarea{
     height: 8vh;
 }
 
-
-
-
 /* Esconder as setas que aparecem automáticamente no formulário de tipo numérico */
-label .no-arrow {
-    
+label .no-arrow { 
     -moz-appearance: textfield;
 }
   
@@ -43,7 +55,7 @@ label .no-arrow::-webkit-inner-spin-button {
 }
   
 label .no-arrow::-webkit-outer-spin-button, .no-arrow::-webkit-inner-spin-button {
--webkit-appearance: none;
-margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 

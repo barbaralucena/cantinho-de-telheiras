@@ -9,7 +9,7 @@ export default function Sidebar(props){
                <button
                   type="button" 
                   onClick={() => {props.setState(currentState => !currentState)}}>
-                  <img src="/images/ícones/sidebar.png" alt="fechar o menu"/>
+                  <img src="/images/ícones/sidebar.svg" alt="fechar o menu"/>
                </button>
             </div>   
             <ul>
