@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import ORestaurante from './components/ORestaurante';
 import Menu from './components/Menu';
+import Garrafeira from './components/Garrafeira';
 import Contactos from './components/Contactos';
 import Reservas from './components/Reservas';
 import Footer from './components/Footer';
@@ -18,7 +19,7 @@ export default function App(){
             <Route index path="/" element={<Homepage/>}/>
             <Route path="/ORestaurante" element={<ORestaurante/>}/>
             <Route path="/Menu" element={<Menu/>} />   
-           
+            <Route path="/Garrafeira" element={<Garrafeira/>} />
             <Route path="/Contactos" element={<Contactos/>}/>
             <Route path="/Reservas" element={<Reservas/>}/>
         </Routes>

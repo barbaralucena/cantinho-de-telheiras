@@ -31,7 +31,7 @@
     }
 
     .sidebar ul a:hover {
-        box-shadow: inset 200px 0 0 0 var(--primary-color);
+        box-shadow: inset 300px 0 0 0 var(--primary-color);
         color: var(--secondary-color);
     }
 

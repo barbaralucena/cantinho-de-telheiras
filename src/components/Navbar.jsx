@@ -5,7 +5,6 @@ import Sidebar from "./Sidebar";
 
 export default function Navbar() {
     const [toggleSidebar, setToggleSidebar] = useState(false)
- 
 
     return (
         <header>
@@ -18,6 +17,7 @@ export default function Navbar() {
                     <li><NavLink to="/oRestaurante">O Restaurante</NavLink></li>
                     <li><NavLink to="/Menu">Menu</NavLink>
                     </li>
+                    <li><NavLink to="/Garrafeira">Garrafeira</NavLink></li>
                     <li><NavLink to="/Contactos">Contactos</NavLink></li>
                     <li><NavLink to="/Reservas">Reservas</NavLink></li>
                 </ul>  

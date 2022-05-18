@@ -70,6 +70,10 @@
     margin: 0 2em;
 }
 
+.contactos span{
+    font-weight: bold;
+}
+
 @media screen and (max-width:1082px){
     .página-contactos main{
         display: flex;
