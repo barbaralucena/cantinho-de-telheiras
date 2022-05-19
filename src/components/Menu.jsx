@@ -1,4 +1,4 @@
-import "../style/Menu.css";
+import "../styles/Menu.css";
 import { useState, useEffect } from "react";
 import {PratosdeCarne, PratosdePeixe, Petiscos, Sobremesas} from "../data/menu-data";
 
@@ -27,10 +27,12 @@ export default function Menu(){
             </header>
             <div className="menu-nav">
                 <div className="btn-container">
-                <button  onClick={()=> setFilter('PRATOS-DE-PEIXE')}>Pratos de Peixe</button>
-                <button  onClick={()=> setFilter('PRATOS-DE-CARNE')}>Pratos de Carne</button>
-                <button  onClick={()=> setFilter('PETISCOS')}>Petiscos</button>
-                <button  onClick={()=> setFilter('SOBREMESAS')}>Sobremesas</button>
+                <button 
+                className={`filter-btn ${filter === 'PRATOS-DE-CARNE'?'active-btn' : ''}`} 
+                onClick={()=> setFilter('PRATOS-DE-CARNE')}>Pratos de Carne</button>
+                <button  className={`filter-btn ${filter === 'PRATOS-DE-PEIXE'?'active-btn' : ''}`}   onClick={()=> setFilter('PRATOS-DE-PEIXE')}>Pratos de Peixe</button>
+                <button  className={`filter-btn ${filter === 'PETISCOS'?'active-btn' : ''}`} onClick={()=> setFilter('PETISCOS')}>Petiscos</button>
+                <button  className={`filter-btn ${filter === 'SOBREMESAS'?'active-btn' : ''}`}  onClick={()=> setFilter('SOBREMESAS')}>Sobremesas</button>
                 </div>
                 <ul>
                     {products.map((item=>(<li

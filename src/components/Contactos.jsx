@@ -1,4 +1,4 @@
-import "../style/Contactos.css"
+import "../styles/Contactos.css"
 import Map from "../data/map";
 export default function Contactos(){
     return(
@@ -20,11 +20,19 @@ export default function Contactos(){
                         <span>Email:</span>
                         <a href="mailto:cantinhotelheiras@gmail.com">   cantinhotelheiras@gmail.com</a>
                     </p>
+                    <p>
+                        <span>Instagram:</span>
+                        <a href="https://www.instagram.com/ocantinhodetelheiras/">   @ocantinhodetelheiras</a>
+                    </p>
+                    <p>
+                        <span>Facebook:</span>
+                        <a href="https://www.facebook.com/OCantinhoDeTelheiras/">   @OCantinhodDeTelheiras</a>
+                    </p>
+                   
                 </div>
                 <div className="horários">
                     <h2>Horários</h2>
-                    <p>De <span>segunda-feira a sexta-feira</span> das 8 às 22h.</p>
-                    <p><span>Sábados</span> das 8h às 16h.</p>
+                    <p>Encontramo-nos abertos de <span>segunda-feira a sexta-feira</span> das 8 às 22h e <span>sábados</span> das 8h às 16h. Aos <span>domingos</span> encerramos.</p>
                 </div>
             </main>
         </div>

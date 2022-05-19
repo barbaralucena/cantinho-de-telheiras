@@ -1,4 +1,4 @@
-import "../style/Header.css";
+import "../styles/Header.css";
 import { NavLink } from 'react-router-dom';
 import { useState } from "react";
 import Sidebar from "./Sidebar";

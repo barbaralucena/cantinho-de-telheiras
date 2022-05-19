@@ -16,7 +16,6 @@
     object-fit: cover;
     overflow: hidden;
     border: double var(--primary-color) 8px; 
-    opacity: .9;
 }
 
 .slideshow_container{ 

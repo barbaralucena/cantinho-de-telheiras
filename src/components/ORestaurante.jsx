@@ -1,4 +1,4 @@
-import "../style/ORestaurante.css";
+import "../styles/ORestaurante.css";
 export default function ORestaurante(){
     return(
         <div className= "o-restaurante">

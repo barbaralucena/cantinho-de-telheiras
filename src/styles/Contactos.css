@@ -36,7 +36,7 @@
 
 .página-contactos main{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
     text-align:justify;
     font-weight: 100;
     line-height: 1.5em;
@@ -45,7 +45,6 @@
     color: var(--primary-color);
     transition: transform .2s
 }
-
 
 
 .página-contactos main h2{
@@ -68,13 +67,15 @@
     color: var(--secondary-color);  
 }
 
-.página-contactos main div{
-    margin: 0 2em;
-}
-
-.contactos span{
+.página-contactos span{
     font-weight: bold;
 }
+
+
+.map, .contactos, .horários{
+    margin: 0 4em;
+}
+
 
 @media screen and (max-width:1082px){
     .página-contactos main{

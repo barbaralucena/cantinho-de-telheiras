@@ -1,4 +1,4 @@
-import "../style/Homepage.css"
+import "../styles/Homepage.css"
 import Slideshow from "./Slideshow";
 
 export default function Homepage(){

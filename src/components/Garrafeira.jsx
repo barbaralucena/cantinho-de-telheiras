@@ -1,4 +1,4 @@
-import "../style/Garrafeira.css";
+import "../styles/Garrafeira.css";
 import { useState, useEffect } from "react";
 import {VinhosBrancos, VinhosRosés, VinhosTintos, VinhosVerdes} from "../data/garrafeira-data";
 

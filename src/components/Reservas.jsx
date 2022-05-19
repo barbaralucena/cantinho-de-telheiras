@@ -1,4 +1,4 @@
-import "../style/Reservas.css";
+import "../styles/Reservas.css";
 import { useState } from "react";
 
 export default function ReservasOnline() {
