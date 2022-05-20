@@ -42,6 +42,7 @@ export const PratosdeCarne = [
     {id:"41",name: "Mão de vaca com grão", price:"8,50€"},
     {id:"42",name: "Pezinhos de porco de coentrada", price:"9,50€"},  
 ]
+
 export const PratosdePeixe = [
     {id:"43",name: "Bacalhau à minhota", price:"11,50€"},
     {id:"44",name: "Robalinho grelhado", price:"10,50€"},
@@ -113,5 +114,6 @@ export const Sobremesas = [
     {id:"103",name: "Toucinho do céu", price:"3,50€"},
     {id:"104",name: "Pudim de ovos", price:"2,80€"},
 ]
+
 
 

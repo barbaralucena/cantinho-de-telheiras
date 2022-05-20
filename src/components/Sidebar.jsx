@@ -9,7 +9,7 @@ export default function Sidebar(props){
                <button
                   type="button" 
                   onClick={() => {props.setState(currentState => !currentState)}}>
-                  <img src="/images/ícones/sidebar.svg" alt="fechar o menu"/>
+                  <img src="/images/ícones/sidebar.svg" alt="Fechar o menu de navegação do site" />
                </button>
             </div>   
             <ul>
@@ -21,6 +21,10 @@ export default function Sidebar(props){
                <li 
                   onClick={() => {props.setState(currentState => !currentState)}}>
                   <NavLink to="/Menu"> Menu </NavLink>
+               </li>
+               <li 
+                  onClick={() => {props.setState(currentState => !currentState)}}>
+                  <NavLink to="/Garrafeira"> Garrafeira </NavLink>
                </li>
                <li 
                   onClick={() => {props.setState(currentState => !currentState)}}>

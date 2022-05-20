@@ -21,7 +21,7 @@ export default function ReservasOnline() {
    
     return(
         <div className="form-page">
-            {formSubmitted && <p role="alert"> {`Agradecemos a sua reserva ${formData.name}. Em breve receberá mensagem com a confirmação.`}</p>} {!formSubmitted && <form onSubmit={handleSubmit}>
+            {formSubmitted && <p role="alert" className="alert"> {`Agradecemos a sua reserva ${formData.name}. Em breve receberá mensagem com a confirmação.`}</p>} {!formSubmitted && <form onSubmit={handleSubmit}>
                 <div className="form">
                     <label className="first-label">
                     O seu nome:
@@ -84,8 +84,6 @@ export default function ReservasOnline() {
                             aria-label="Phone-number"
                             placeholder="O seu número de telemóvel"
                             value={formData.phoneNumber}
-                            minLength="9"
-                            maxLength="12"
                             required
                             onChange={handleChange}
                             />
@@ -95,7 +93,7 @@ export default function ReservasOnline() {
                             <textarea
                             name="informations"
                             aria-label="Informations"
-                            placeholder="Caso tenha mais alguma informação que nos queira transmitir, faço-o aqui por favor."
+                            placeholder="Caso tenha alguma informação adicional que nos queira transmitir, faço-o aqui."
                             value={formData.informations}
                             onChange={handleChange}
                             />
@@ -103,7 +101,6 @@ export default function ReservasOnline() {
                     <button type="submit" >Reservar mesa</button>
                 </div>
             </form>}
-       
     </div>
     )
 }

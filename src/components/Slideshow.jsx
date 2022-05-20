@@ -12,7 +12,6 @@ export default function Slideshow (){
     
     const [position, setPosition] = useState(0);
     const slideLength = slides.length;
-
     const autoSlide= true;
     let slideInterval;
     let intervalDuration = 2500;

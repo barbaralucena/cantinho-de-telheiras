@@ -10,7 +10,7 @@ export default function Navbar() {
         <header>
             <div className="site-header">
             <div className="logo">
-                <NavLink to="/"><img src="/images/ícones/B4.svg" alt="ir para a homepage"/></NavLink>
+                <NavLink to="/"><img src="/images/ícones/B4.svg" alt="Ir para a homepage"/></NavLink>
             </div>  
             <nav className="navbar">
                 <ul>
@@ -26,7 +26,7 @@ export default function Navbar() {
                 <button 
                         type="button" 
                         onClick= {() => setToggleSidebar(currentState => !currentState)}>
-                        <img src="/images/ícones/hamburger.svg" alt="abrir o menu"/>
+                        <img src="/images/ícones/hamburger.svg" alt="Abrir o menu de navegação do site"/>
                 </button>
             </div>
             </div>

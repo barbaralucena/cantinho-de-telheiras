@@ -1,3 +1,12 @@
+.página-contactos{
+    justify-content: center;    
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .página-contactos header{
     background-color: var(--secondary-color);
     position: relative; 
@@ -12,7 +21,7 @@
     content:"";
     background-image: url("/public/images/contactos/img1.jpeg");
     background-size:cover;
-    background-position-y: 58%;
+    background-position-y: 59%;
     position: absolute;
     display: inline;
     top: 0px;
@@ -23,7 +32,7 @@
     width: 100%;
 }
 
-.página-contactos header h1{
+.página-contactos h1{
     text-transform: uppercase;
     font-weight: 500;
     font-family: var(--secondary-font);  
@@ -37,11 +46,10 @@
 .página-contactos main{
     display: flex;
     flex-direction: row;    
-    text-align:justify;
+    text-align:center;
     font-weight: 100;
     line-height: 1.5em;
-    margin: 0 5vw; 
-    font-size: 1em;
+    margin: 1vh 5vw; 
     color: var(--primary-color);
     transition: transform .2s
 }
@@ -54,7 +62,7 @@
     font-size: 1.4em;
     color: var(--primary-color);
     text-align: center;
-    margin: 1.5em 0;
+    margin: 1.5em 0 1em;
     font-weight: 200;
 }
 
@@ -76,11 +84,57 @@
     margin: 0 4em;
 }
 
+.map-img{    
+    max-width: 30vw;
+}
 
-@media screen and (max-width:1082px){
-    .página-contactos main{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10vh;
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:1024px) {
+    .map, .contactos, .horários{
+        margin: 0 2em;
     }
 }
+
+@media screen and (max-width:800px) {
+    .página-contactos main{
+        display: flex;
+        flex-direction: column;    
+        text-align: center;
+        font-size: .7em; 
+        margin: 1vh 20vw 20vh;
+        font-size: 1.1em;
+        height: 80vh;
+    }
+        
+    .map-img{
+        max-width: 50vw;
+    }
+    .página-contactos header{
+        height: 17vh;
+        font-size: .5em;
+    }
+            
+    .página-contactos header::before{
+        background-position-y: 60%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .map-img{
+        max-width: 70vw;
+    }
+    .página-contactos main{
+      margin: 0;
+      height: 90vh;
+    }
+}
+
+@media screen and (max-width:300px){
+    .página-contactos main{
+    word-break: break-all;
+    }
+} 
+
+

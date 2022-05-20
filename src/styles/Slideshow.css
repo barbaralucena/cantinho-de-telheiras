@@ -40,4 +40,16 @@
     }
 }
 
+@media screen and (max-width:300px){
+    .slideshow img{
+        height: 76vh;
+    }
+}
+
+@media screen and (max-width:255px){
+    .slideshow img{
+        height: 84vh;
+    }
+}
+
 

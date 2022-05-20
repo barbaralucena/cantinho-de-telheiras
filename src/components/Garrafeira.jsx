@@ -24,16 +24,16 @@ export default function Garrafeira(){
             <header>
                 <h1>Os nossos vinhos</h1> 
             </header>
-            <div className="garrafeira-nav">
-                <div className="btn-container">
-                <button  onClick={()=> setFilter('VINHOS-TINTOS')}>Vinhos Tintos</button>
-                <button  onClick={()=> setFilter('VINHOS-BRANCOS')}>Vinhos Brancos</button> <button  onClick={()=> setFilter('VINHOS-VERDES')}>Vinhos Verdes</button> <button  onClick={()=> setFilter('VINHOS-ROSÉS')}>Vinhos Rosés</button>
+            <div className="garrafeira-container">
+                <div className="garrafeira-nav">
+                <button className={`filter-btn ${filter === 'VINHOS-TINTOS'?'active-btn' : ''}`}   onClick={()=> setFilter('VINHOS-TINTOS')}>Vinhos Tintos</button>
+                <button className={`filter-btn ${filter === 'VINHOS-BRANCOS'?'active-btn' : ''}`}  onClick={()=> setFilter('VINHOS-BRANCOS')}>Vinhos Brancos</button> <button className={`filter-btn ${filter === 'VINHOS-VERDES'?'active-btn' : ''}`}  onClick={()=> setFilter('VINHOS-VERDES')}>Vinhos Verdes</button> <button className={`filter-btn ${filter === 'VINHOS-ROSÉS'?'active-btn' : ''}`}   onClick={()=> setFilter('VINHOS-ROSÉS')}>Vinhos Rosés</button>
                 </div>
-                <ul>
+            <ul>
                     {products.map((item=>(<li
                     key={item.id}>{item.name} - {item.price}</li>
                     )))} 
-                </ul>
+            </ul>
             </div>
         </div>
     )

@@ -9,7 +9,6 @@ import Contactos from './components/Contactos';
 import Reservas from './components/Reservas';
 import Footer from './components/Footer';
 
-
 export default function App(){
   return(
     <BrowserRouter>
@@ -23,8 +22,6 @@ export default function App(){
             <Route path="/Contactos" element={<Contactos/>}/>
             <Route path="/Reservas" element={<Reservas/>}/>
         </Routes>
-       
-        
         <Footer/>
       </div>
     </BrowserRouter>
